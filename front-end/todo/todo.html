@@ -1,0 +1,73 @@
+<html>
+
+<head>
+  <title>ListUP</title>
+  <link rel="stylesheet" href="todo.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <nav class="nav-container">
+    <!-- Ce bouton ouvre la pop-up -->
+    <button id="open-popup" class="task-btn" title="Nouvelle tâche">
+      <i class="bx bx-list-plus"></i>
+    </button>
+
+    <button href="note/note.html" id="page-note" class="note-btn" title="Note">
+      <i class='bx bx-book'></i>
+    </button>
+
+    <button id="page-planning" class="planning-btn" title="Planning">
+      <i class="bx bx-calendar-week"></i>
+    </button>
+
+    <button id="page-profil" class="profil-btn" title="Profil">
+      <i class='bx bx-user'></i>
+    </button>
+  </nav>
+
+  <section class="todo-container" id="todo-list"></section>
+
+  <!-- POP-UP -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span id="close-popup" class="close" title="Fermer">&times;</span>
+
+      <form id="todo-form">
+        <div class="task-box">
+          <input type="text" id="task" class="task-input" placeholder="Ajoute une tâche ..." required>
+        </div>
+
+        <div class="info-boxes">
+          <div class="desc-box">
+            <input type="text" id="desc" class="task-input" placeholder="Ajoute une description...">
+          </div>
+
+          <div class="deadline-box">
+            <label for="date">Deadline</label>
+            <input type="date" id="date" class="date-input">
+          </div>
+
+          <div class="status-box">
+            <label for="status">Status</label>
+            <select id="status" class="importance-select">
+              <option value="Not Started">Not Started</option>
+              <option value="Done">Done</option>
+              <option value="In Progression">In Progression</option>
+              <option value="To Do">To Do</option>
+            </select>
+          </div>
+        </div>
+
+        <div style="margin-top: 14px; text-align: right;">
+          <button type="submit" class="task-btn">Ajouter</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="/todo/todo.js"></script>
+</body>
+
+</html>
