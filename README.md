@@ -2,6 +2,7 @@
 */Projet_Epitech/Bachlor1/Web* 
 
 **Status :** Premier projet Web réalisé après la piscine Web Full‑Stack.
+
 **Objectif :** Créer une application complète comprenant :
 - une interface de présentation,
 - une page d’inscription,
